@@ -160,3 +160,10 @@ Started GET "/posts/new" for 104.162.89.131 at 2018-10-09 14:24:13 +0000
 Processing by PostsController#new as HTML
   Rendered posts/new.html.erb within layouts/application (1.9ms)
 Completed 200 OK in 300ms (Views: 288.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for 104.162.89.131 at 2019-10-17 19:52:06 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.2ms)[0m  SELECT "posts".* FROM "posts"
+  Rendered posts/index.html.erb within layouts/application (2.5ms)
